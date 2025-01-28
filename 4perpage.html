@@ -4,9 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dallas Tradeshow Collection</title>
-    <link href="https://fonts.cdnfonts.com/css/satoshi" rel="stylesheet">
 
+    <link href="https://fonts.cdnfonts.com/css/satoshi" rel="stylesheet">
     <style>
         @page {
             size: A4;
@@ -16,21 +15,17 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            font-family: 'Satoshi', sans-serif;
         }
     </style>
 </head>
 
-<!-- body -->
-
-<body style="
-    overflow-x: hidden; 
-    font-family: 'Satoshi', 
-    sans-serif; display: flex; 
-    flex-direction: column; 
-    height: auto; 
-    justify-self: center; 
-    ">
-
+<body style="overflow-x: hidden; 
+ font-family: 'Satoshi', sans-serif;
+ display: flex; 
+ flex-direction: column; 
+ height: auto;
+ justify-content: center;">
     <!-- Header -->
     <header
         style="display: flex; justify-content: space-between; align-items: center; width: 100%; padding: 0px 20px 0px 25px; border-bottom: 1px solid #0000001F ;">
@@ -48,795 +43,202 @@
         </p>
     </header>
 
-    <!-- main section -->
-    <main style="display: grid; grid-template-columns: 1fr 1fr; padding: 10px 20px; gap: 10px;">
-
-        <!-- products -->
-
-        <!--  1st product -->
-        <div style=" display: flex; flex-direction: column; gap: 8px; ">
-
-            <div style="display: flex; gap: 12px; flex-direction: row;">
-
-                <!-- image -->
-
-                <img height="100px" width="100px" src="Assets/first-image.png" alt="product image"
-                    style="border-radius: 8px;">
-
-                <!-- info section -->
-                <div style="display: flex; flex-direction: column; gap: 4px; ">
-
-                    <!-- sku id -->
-                    <p style="font-size: 10px ;font-weight: 400; color: #4F555E; line-height: 17.55px;">
-                        WC_DC57-10003
-                    </p>
-
-                    <!-- product name -->
-                    <h1 style="font-size: 12px; font-weight: 700; margin: 0;">
-                        Twinning Sable (Large, Beige) Marble Candle Holder
-                    </h1>
-
-                    <!-- price and MOQ section-->
-                    <div style="display: flex; align-items: center; gap: 10px;">
-                        <!-- price -->
-                        <h1 style="font-size: 10px; font-weight: 700;">
-                            $32
-                        </h1>
-
-                        <!-- MOQ -->
-                        <p style="font-size: 11px; font-weight: 400; color: #4F555E; line-height: 16.2px;">
-                            (MOQ-15)
-                        </p>
-                    </div>
-
-                    <!-- dynamic chips -->
-                    <div style="display: flex; gap: 4px; flex-wrap: wrap;">
-                        <div
-                            style="padding: 3px 6px; background-color: #F2F4F7; width: fit-content; border-radius: 3px;">
-                            <p style="font-size: 11px; font-weight: 400; color: #4F555E;">Marble body</p>
-                        </div>
-                        <div
-                            style="padding: 3px 6px; background-color: #F2F4F7; width: fit-content; border-radius: 3px;">
-                            <p style="font-size: 11px; font-weight: 400; color: #4F555E;">Beige</p>
-                        </div>
-                        <div
-                            style="padding: 3px 6px; background-color: #F2F4F7; width: fit-content; border-radius: 3px;">
-                            <p style="font-size: 11px; font-weight: 400; color: #4F555E;">Cream</p>
-                        </div>
-
-                    </div>
+    <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; padding: 24px;">
+        <!-- Product Card 1 -->
+        <div class="product-card">
+            <div style="position: relative;">
+                <div style="width: 275px; height: 165px; border: 1px solid #D1D6DD; border-radius: 8px;">
+                    <img src="Assets/first-image.png" alt="first-image"
+                        style="width: 100%; height: 100%; object-fit: contain;">
                 </div>
 
-
+                <!-- Availability chip -->
+                <div
+                    style="position: absolute; top: 11px; left: 12px; background: #F2F6E7; border-radius: 20px; padding: 4px 12px; display: flex; align-items: center; gap: 6px;">
+                    <span style="width: 8px; height: 8px; background: #7DA50E; border-radius: 50%;"></span>
+                    <span style="font-size: 11px;">Available: 400 units</span>
+                </div>
             </div>
 
-            <!-- attributes -->
 
-            <section style="display: grid; grid-template-columns: 40px 1fr; gap: 4px;">
 
-                <!-- Style -->
-                <div>
-                    <p style="font-size: 11px ;font-weight: 400; color: #676D77; line-height: 17.55px;">Style</p>
-                </div>
-                <div>
-                    <p style="font-size: 11px ;font-weight: 400; color: #4F555E; line-height: 17.55px;">
-                        Vintage, Modern, Traditional, Rustic, Bohemian
-                    </p>
-                </div>
+            <div style="padding: 16px 0;">
+                <!-- SKU ID -->
+                <span style="color: #676D77; font-size: 11px;">WC_DC57-10003</span>
 
-                <!-- Finish -->
-                <div>
-                    <p style="font-size: 11px ;font-weight: 400; color: #676D77; line-height: 17.55px;">
-                        Finish
-                    </p>
-                </div>
-                <div>
-                    <p style="font-size: 11px ;font-weight: 400; color: #4F555E; line-height: 17.55px;">
-                        Matte
-                    </p>
+                <!-- product name -->
+                <h2 style="font-size: 12px; margin: 8px 0;">Twinning Sable (Large, Beige) Marble Candle Holder</h2>
+
+                <!-- skus -->
+                <div style="display: flex; gap: 8px; color: #4F555E; font-size: 11px;">
+                    <span>Home Decor</span>
+                    <span>•</span>
+                    <span>Living room 2024</span>
                 </div>
 
-                <!-- Color -->
-                <div>
-                    <p style="font-size: 11px ;font-weight: 400; color: #676D77; line-height: 17.55px;">
-                        Color
-                    </p>
-                </div>
-                <div>
-                    <p style="font-size: 11px ;font-weight: 400; color: #4F555E; line-height: 17.55px;">
-                        Beige
-                    </p>
+                <!-- Information section -->
+
+                <div style="display: flex; gap: 8px; margin: 12px 0;">
+                    <span style="background: #F2F4F7; padding: 3px 8px; border-radius: 4px; font-size: 11px;">Marble
+                        body</span>
+                    <span
+                        style="background: #F2F4F7; padding: 3px 8px; border-radius: 4px; font-size: 11px;">Beige</span>
+                    <span style="background: #F2F4F7; padding: 3px 8px; border-radius: 4px; font-size: 11px;">Cream
+                        finish</span>
                 </div>
 
-            </section>
+                <div style="display: flex; align-items: center; gap: 8px;">
+                    <span style="font-size: 16px; font-weight: 700;">$32</span>
+                    <span style="color: #4F555E; font-size: 12px;">(MOQ-15)</span>
+                </div>
+            </div>
         </div>
-
-        <!--  2nd product -->
-        <div style=" display: flex; flex-direction: column; gap: 8px; ">
-
-            <div style="display: flex; gap: 12px; flex-direction: row;">
-
-                <!-- image -->
-
-                <img height="100px" width="100px" src="Assets/first-image.png" alt="product image"
-                    style="border-radius: 8px;">
-
-                <!-- info section -->
-                <div style="display: flex; flex-direction: column; gap: 4px; ">
-
-                    <!-- sku id -->
-                    <p style="font-size: 10px ;font-weight: 400; color: #4F555E; line-height: 17.55px;">
-                        WC_DC57-10003
-                    </p>
-
-                    <!-- product name -->
-                    <h1 style="font-size: 12px; font-weight: 700; margin: 0;">
-                        Twinning Sable (Large, Beige) Marble Candle Holder
-                    </h1>
-
-                    <!-- price and MOQ section-->
-                    <div style="display: flex; align-items: center; gap: 10px;">
-                        <!-- price -->
-                        <h1 style="font-size: 10px; font-weight: 700;">
-                            $32
-                        </h1>
-
-                        <!-- MOQ -->
-                        <p style="font-size: 11px; font-weight: 400; color: #4F555E; line-height: 16.2px;">
-                            (MOQ-15)
-                        </p>
-                    </div>
-
-                    <!-- dynamic chips -->
-                    <div style="display: flex; gap: 4px; flex-wrap: wrap;">
-                        <div
-                            style="padding: 3px 6px; background-color: #F2F4F7; width: fit-content; border-radius: 3px;">
-                            <p style="font-size: 11px; font-weight: 400; color: #4F555E;">Marble body</p>
-                        </div>
-                        <div
-                            style="padding: 3px 6px; background-color: #F2F4F7; width: fit-content; border-radius: 3px;">
-                            <p style="font-size: 11px; font-weight: 400; color: #4F555E;">Beige</p>
-                        </div>
-                        <div
-                            style="padding: 3px 6px; background-color: #F2F4F7; width: fit-content; border-radius: 3px;">
-                            <p style="font-size: 11px; font-weight: 400; color: #4F555E;">Cream</p>
-                        </div>
-
-                    </div>
+        <div class="product-card">
+            <div style="position: relative;">
+                <div style="width: 275px; height: 165px; border: 1px solid #D1D6DD; border-radius: 8px;">
+                    <img src="Assets/first-image.png" alt="first-image"
+                        style="width: 100%; height: 100%; object-fit: contain;">
                 </div>
 
-
+                <!-- Availability chip -->
+                <div
+                    style="position: absolute; top: 11px; left: 12px; background: #F2F6E7; border-radius: 20px; padding: 4px 12px; display: flex; align-items: center; gap: 6px;">
+                    <span style="width: 8px; height: 8px; background: #7DA50E; border-radius: 50%;"></span>
+                    <span style="font-size: 11px;">Available: 400 units</span>
+                </div>
             </div>
 
-            <!-- attributes -->
 
-            <section style="display: grid; grid-template-columns: 40px 1fr; gap: 4px;">
 
-                <!-- Style -->
-                <div>
-                    <p style="font-size: 11px ;font-weight: 400; color: #676D77; line-height: 17.55px;">Style</p>
-                </div>
-                <div>
-                    <p style="font-size: 11px ;font-weight: 400; color: #4F555E; line-height: 17.55px;">
-                        Vintage, Modern, Traditional, Rustic, Bohemian
-                    </p>
-                </div>
+            <div style="padding: 16px 0;">
+                <!-- SKU ID -->
+                <span style="color: #676D77; font-size: 11px;">WC_DC57-10003</span>
 
-                <!-- Finish -->
-                <div>
-                    <p style="font-size: 11px ;font-weight: 400; color: #676D77; line-height: 17.55px;">
-                        Finish
-                    </p>
-                </div>
-                <div>
-                    <p style="font-size: 11px ;font-weight: 400; color: #4F555E; line-height: 17.55px;">
-                        Matte
-                    </p>
+                <!-- product name -->
+                <h2 style="font-size: 12px; margin: 8px 0;">Twinning Sable (Large, Beige) Marble Candle Holder</h2>
+
+                <!-- skus -->
+                <div style="display: flex; gap: 8px; color: #4F555E; font-size: 11px;">
+                    <span>Home Decor</span>
+                    <span>•</span>
+                    <span>Living room 2024</span>
                 </div>
 
-                <!-- Color -->
-                <div>
-                    <p style="font-size: 11px ;font-weight: 400; color: #676D77; line-height: 17.55px;">
-                        Color
-                    </p>
-                </div>
-                <div>
-                    <p style="font-size: 11px ;font-weight: 400; color: #4F555E; line-height: 17.55px;">
-                        Beige
-                    </p>
+                <!-- Information section -->
+
+                <div style="display: flex; gap: 8px; margin: 12px 0;">
+                    <span style="background: #F2F4F7; padding: 3px 8px; border-radius: 4px; font-size: 11px;">Marble
+                        body</span>
+                    <span
+                        style="background: #F2F4F7; padding: 3px 8px; border-radius: 4px; font-size: 11px;">Beige</span>
+                    <span style="background: #F2F4F7; padding: 3px 8px; border-radius: 4px; font-size: 11px;">Cream
+                        finish</span>
                 </div>
 
-            </section>
+                <div style="display: flex; align-items: center; gap: 8px;">
+                    <span style="font-size: 16px; font-weight: 700;">$32</span>
+                    <span style="color: #4F555E; font-size: 12px;">(MOQ-15)</span>
+                </div>
+            </div>
         </div>
-
-        <!--  3rd product -->
-        <div style=" display: flex; flex-direction: column; gap: 8px; ">
-
-            <div style="display: flex; gap: 12px; flex-direction: row;">
-
-                <!-- image -->
-
-                <img height="100px" width="100px" src="Assets/first-image.png" alt="product image"
-                    style="border-radius: 8px;">
-
-                <!-- info section -->
-                <div style="display: flex; flex-direction: column; gap: 4px; ">
-
-                    <!-- sku id -->
-                    <p style="font-size: 10px ;font-weight: 400; color: #4F555E; line-height: 17.55px;">
-                        WC_DC57-10003
-                    </p>
-
-                    <!-- product name -->
-                    <h1 style="font-size: 12px; font-weight: 700; margin: 0;">
-                        Twinning Sable (Large, Beige) Marble Candle Holder
-                    </h1>
-
-                    <!-- price and MOQ section-->
-                    <div style="display: flex; align-items: center; gap: 10px;">
-                        <!-- price -->
-                        <h1 style="font-size: 10px; font-weight: 700;">
-                            $32
-                        </h1>
-
-                        <!-- MOQ -->
-                        <p style="font-size: 11px; font-weight: 400; color: #4F555E; line-height: 16.2px;">
-                            (MOQ-15)
-                        </p>
-                    </div>
-
-                    <!-- dynamic chips -->
-                    <div style="display: flex; gap: 4px; flex-wrap: wrap;">
-                        <div
-                            style="padding: 3px 6px; background-color: #F2F4F7; width: fit-content; border-radius: 3px;">
-                            <p style="font-size: 11px; font-weight: 400; color: #4F555E;">Marble body</p>
-                        </div>
-                        <div
-                            style="padding: 3px 6px; background-color: #F2F4F7; width: fit-content; border-radius: 3px;">
-                            <p style="font-size: 11px; font-weight: 400; color: #4F555E;">Beige</p>
-                        </div>
-                        <div
-                            style="padding: 3px 6px; background-color: #F2F4F7; width: fit-content; border-radius: 3px;">
-                            <p style="font-size: 11px; font-weight: 400; color: #4F555E;">Cream</p>
-                        </div>
-
-                    </div>
+        <div class="product-card">
+            <div style="position: relative;">
+                <div style="width: 275px; height: 165px; border: 1px solid #D1D6DD; border-radius: 8px;">
+                    <img src="Assets/first-image.png" alt="first-image"
+                        style="width: 100%; height: 100%; object-fit: contain;">
                 </div>
 
-
+                <!-- Availability chip -->
+                <div
+                    style="position: absolute; top: 11px; left: 12px; background: #F2F6E7; border-radius: 20px; padding: 4px 12px; display: flex; align-items: center; gap: 6px;">
+                    <span style="width: 8px; height: 8px; background: #7DA50E; border-radius: 50%;"></span>
+                    <span style="font-size: 11px;">Available: 400 units</span>
+                </div>
             </div>
 
-            <!-- attributes -->
 
-            <section style="display: grid; grid-template-columns: 40px 1fr; gap: 4px;">
 
-                <!-- Style -->
-                <div>
-                    <p style="font-size: 11px ;font-weight: 400; color: #676D77; line-height: 17.55px;">Style</p>
-                </div>
-                <div>
-                    <p style="font-size: 11px ;font-weight: 400; color: #4F555E; line-height: 17.55px;">
-                        Vintage, Modern, Traditional, Rustic, Bohemian
-                    </p>
-                </div>
+            <div style="padding: 16px 0;">
+                <!-- SKU ID -->
+                <span style="color: #676D77; font-size: 11px;">WC_DC57-10003</span>
 
-                <!-- Finish -->
-                <div>
-                    <p style="font-size: 11px ;font-weight: 400; color: #676D77; line-height: 17.55px;">
-                        Finish
-                    </p>
-                </div>
-                <div>
-                    <p style="font-size: 11px ;font-weight: 400; color: #4F555E; line-height: 17.55px;">
-                        Matte
-                    </p>
+                <!-- product name -->
+                <h2 style="font-size: 12px; margin: 8px 0;">Twinning Sable (Large, Beige) Marble Candle Holder</h2>
+
+                <!-- skus -->
+                <div style="display: flex; gap: 8px; color: #4F555E; font-size: 11px;">
+                    <span>Home Decor</span>
+                    <span>•</span>
+                    <span>Living room 2024</span>
                 </div>
 
-                <!-- Color -->
-                <div>
-                    <p style="font-size: 11px ;font-weight: 400; color: #676D77; line-height: 17.55px;">
-                        Color
-                    </p>
-                </div>
-                <div>
-                    <p style="font-size: 11px ;font-weight: 400; color: #4F555E; line-height: 17.55px;">
-                        Beige
-                    </p>
+                <!-- Information section -->
+
+                <div style="display: flex; gap: 8px; margin: 12px 0;">
+                    <span style="background: #F2F4F7; padding: 3px 8px; border-radius: 4px; font-size: 11px;">Marble
+                        body</span>
+                    <span
+                        style="background: #F2F4F7; padding: 3px 8px; border-radius: 4px; font-size: 11px;">Beige</span>
+                    <span style="background: #F2F4F7; padding: 3px 8px; border-radius: 4px; font-size: 11px;">Cream
+                        finish</span>
                 </div>
 
-            </section>
+                <div style="display: flex; align-items: center; gap: 8px;">
+                    <span style="font-size: 16px; font-weight: 700;">$32</span>
+                    <span style="color: #4F555E; font-size: 12px;">(MOQ-15)</span>
+                </div>
+            </div>
         </div>
-
-        <!--  4th product -->
-        <div style=" display: flex; flex-direction: column; gap: 8px; ">
-
-            <div style="display: flex; gap: 12px; flex-direction: row;">
-
-                <!-- image -->
-
-                <img height="100px" width="100px" src="Assets/first-image.png" alt="product image"
-                    style="border-radius: 8px;">
-
-                <!-- info section -->
-                <div style="display: flex; flex-direction: column; gap: 4px; ">
-
-                    <!-- sku id -->
-                    <p style="font-size: 10px ;font-weight: 400; color: #4F555E; line-height: 17.55px;">
-                        WC_DC57-10003
-                    </p>
-
-                    <!-- product name -->
-                    <h1 style="font-size: 12px; font-weight: 700; margin: 0;">
-                        Twinning Sable (Large, Beige) Marble Candle Holder
-                    </h1>
-
-                    <!-- price and MOQ section-->
-                    <div style="display: flex; align-items: center; gap: 10px;">
-                        <!-- price -->
-                        <h1 style="font-size: 10px; font-weight: 700;">
-                            $32
-                        </h1>
-
-                        <!-- MOQ -->
-                        <p style="font-size: 11px; font-weight: 400; color: #4F555E; line-height: 16.2px;">
-                            (MOQ-15)
-                        </p>
-                    </div>
-
-                    <!-- dynamic chips -->
-                    <div style="display: flex; gap: 4px; flex-wrap: wrap;">
-                        <div
-                            style="padding: 3px 6px; background-color: #F2F4F7; width: fit-content; border-radius: 3px;">
-                            <p style="font-size: 11px; font-weight: 400; color: #4F555E;">Marble body</p>
-                        </div>
-                        <div
-                            style="padding: 3px 6px; background-color: #F2F4F7; width: fit-content; border-radius: 3px;">
-                            <p style="font-size: 11px; font-weight: 400; color: #4F555E;">Beige</p>
-                        </div>
-                        <div
-                            style="padding: 3px 6px; background-color: #F2F4F7; width: fit-content; border-radius: 3px;">
-                            <p style="font-size: 11px; font-weight: 400; color: #4F555E;">Cream</p>
-                        </div>
-
-                    </div>
+        <div class="product-card">
+            <div style="position: relative;">
+                <div style="width: 275px; height: 165px; border: 1px solid #D1D6DD; border-radius: 8px;">
+                    <img src="Assets/first-image.png" alt="first-image"
+                        style="width: 100%; height: 100%; object-fit: contain;">
                 </div>
 
-
+                <!-- Availability chip -->
+                <div
+                    style="position: absolute; top: 11px; left: 12px; background: #F2F6E7; border-radius: 20px; padding: 4px 12px; display: flex; align-items: center; gap: 6px;">
+                    <span style="width: 8px; height: 8px; background: #7DA50E; border-radius: 50%;"></span>
+                    <span style="font-size: 11px;">Available: 400 units</span>
+                </div>
             </div>
 
-            <!-- attributes -->
 
-            <section style="display: grid; grid-template-columns: 40px 1fr; gap: 4px;">
 
-                <!-- Style -->
-                <div>
-                    <p style="font-size: 11px ;font-weight: 400; color: #676D77; line-height: 17.55px;">Style</p>
-                </div>
-                <div>
-                    <p style="font-size: 11px ;font-weight: 400; color: #4F555E; line-height: 17.55px;">
-                        Vintage, Modern, Traditional, Rustic, Bohemian
-                    </p>
-                </div>
+            <div style="padding: 16px 0;">
+                <!-- SKU ID -->
+                <span style="color: #676D77; font-size: 11px;">WC_DC57-10003</span>
 
-                <!-- Finish -->
-                <div>
-                    <p style="font-size: 11px ;font-weight: 400; color: #676D77; line-height: 17.55px;">
-                        Finish
-                    </p>
-                </div>
-                <div>
-                    <p style="font-size: 11px ;font-weight: 400; color: #4F555E; line-height: 17.55px;">
-                        Matte
-                    </p>
+                <!-- product name -->
+                <h2 style="font-size: 12px; margin: 8px 0;">Twinning Sable (Large, Beige) Marble Candle Holder</h2>
+
+                <!-- skus -->
+                <div style="display: flex; gap: 8px; color: #4F555E; font-size: 11px;">
+                    <span>Home Decor</span>
+                    <span>•</span>
+                    <span>Living room 2024</span>
                 </div>
 
-                <!-- Color -->
-                <div>
-                    <p style="font-size: 11px ;font-weight: 400; color: #676D77; line-height: 17.55px;">
-                        Color
-                    </p>
-                </div>
-                <div>
-                    <p style="font-size: 11px ;font-weight: 400; color: #4F555E; line-height: 17.55px;">
-                        Beige
-                    </p>
-                </div>
+                <!-- Information section -->
 
-            </section>
-        </div>
-
-        <!--  5th product -->
-        <div style=" display: flex; flex-direction: column; gap: 8px; ">
-
-            <div style="display: flex; gap: 12px; flex-direction: row;">
-
-                <!-- image -->
-
-                <img height="100px" width="100px" src="Assets/first-image.png" alt="product image"
-                    style="border-radius: 8px;">
-
-                <!-- info section -->
-                <div style="display: flex; flex-direction: column; gap: 4px; ">
-
-                    <!-- sku id -->
-                    <p style="font-size: 10px ;font-weight: 400; color: #4F555E; line-height: 17.55px;">
-                        WC_DC57-10003
-                    </p>
-
-                    <!-- product name -->
-                    <h1 style="font-size: 12px; font-weight: 700; margin: 0;">
-                        Twinning Sable (Large, Beige) Marble Candle Holder
-                    </h1>
-
-                    <!-- price and MOQ section-->
-                    <div style="display: flex; align-items: center; gap: 10px;">
-                        <!-- price -->
-                        <h1 style="font-size: 10px; font-weight: 700;">
-                            $32
-                        </h1>
-
-                        <!-- MOQ -->
-                        <p style="font-size: 11px; font-weight: 400; color: #4F555E; line-height: 16.2px;">
-                            (MOQ-15)
-                        </p>
-                    </div>
-
-                    <!-- dynamic chips -->
-                    <div style="display: flex; gap: 4px; flex-wrap: wrap;">
-                        <div
-                            style="padding: 3px 6px; background-color: #F2F4F7; width: fit-content; border-radius: 3px;">
-                            <p style="font-size: 11px; font-weight: 400; color: #4F555E;">Marble body</p>
-                        </div>
-                        <div
-                            style="padding: 3px 6px; background-color: #F2F4F7; width: fit-content; border-radius: 3px;">
-                            <p style="font-size: 11px; font-weight: 400; color: #4F555E;">Beige</p>
-                        </div>
-                        <div
-                            style="padding: 3px 6px; background-color: #F2F4F7; width: fit-content; border-radius: 3px;">
-                            <p style="font-size: 11px; font-weight: 400; color: #4F555E;">Cream</p>
-                        </div>
-
-                    </div>
+                <div style="display: flex; gap: 8px; margin: 12px 0;">
+                    <span style="background: #F2F4F7; padding: 3px 8px; border-radius: 4px; font-size: 11px;">Marble
+                        body</span>
+                    <span
+                        style="background: #F2F4F7; padding: 3px 8px; border-radius: 4px; font-size: 11px;">Beige</span>
+                    <span style="background: #F2F4F7; padding: 3px 8px; border-radius: 4px; font-size: 11px;">Cream
+                        finish</span>
                 </div>
 
-
+                <div style="display: flex; align-items: center; gap: 8px;">
+                    <span style="font-size: 16px; font-weight: 700;">$32</span>
+                    <span style="color: #4F555E; font-size: 12px;">(MOQ-15)</span>
+                </div>
             </div>
-
-            <!-- attributes -->
-
-            <section style="display: grid; grid-template-columns: 40px 1fr; gap: 4px;">
-
-                <!-- Style -->
-                <div>
-                    <p style="font-size: 11px ;font-weight: 400; color: #676D77; line-height: 17.55px;">Style</p>
-                </div>
-                <div>
-                    <p style="font-size: 11px ;font-weight: 400; color: #4F555E; line-height: 17.55px;">
-                        Vintage, Modern, Traditional, Rustic, Bohemian
-                    </p>
-                </div>
-
-                <!-- Finish -->
-                <div>
-                    <p style="font-size: 11px ;font-weight: 400; color: #676D77; line-height: 17.55px;">
-                        Finish
-                    </p>
-                </div>
-                <div>
-                    <p style="font-size: 11px ;font-weight: 400; color: #4F555E; line-height: 17.55px;">
-                        Matte
-                    </p>
-                </div>
-
-                <!-- Color -->
-                <div>
-                    <p style="font-size: 11px ;font-weight: 400; color: #676D77; line-height: 17.55px;">
-                        Color
-                    </p>
-                </div>
-                <div>
-                    <p style="font-size: 11px ;font-weight: 400; color: #4F555E; line-height: 17.55px;">
-                        Beige
-                    </p>
-                </div>
-
-            </section>
         </div>
 
-        <!--  6th product -->
-        <div style=" display: flex; flex-direction: column; gap: 8px; ">
-
-            <div style="display: flex; gap: 12px; flex-direction: row;">
-
-                <!-- image -->
-
-                <img height="100px" width="100px" src="Assets/first-image.png" alt="product image"
-                    style="border-radius: 8px;">
-
-                <!-- info section -->
-                <div style="display: flex; flex-direction: column; gap: 4px; ">
-
-                    <!-- sku id -->
-                    <p style="font-size: 10px ;font-weight: 400; color: #4F555E; line-height: 17.55px;">
-                        WC_DC57-10003
-                    </p>
-
-                    <!-- product name -->
-                    <h1 style="font-size: 12px; font-weight: 700; margin: 0;">
-                        Twinning Sable (Large, Beige) Marble Candle Holder
-                    </h1>
-
-                    <!-- price and MOQ section-->
-                    <div style="display: flex; align-items: center; gap: 10px;">
-                        <!-- price -->
-                        <h1 style="font-size: 10px; font-weight: 700;">
-                            $32
-                        </h1>
-
-                        <!-- MOQ -->
-                        <p style="font-size: 11px; font-weight: 400; color: #4F555E; line-height: 16.2px;">
-                            (MOQ-15)
-                        </p>
-                    </div>
-
-                    <!-- dynamic chips -->
-                    <div style="display: flex; gap: 4px; flex-wrap: wrap;">
-                        <div
-                            style="padding: 3px 6px; background-color: #F2F4F7; width: fit-content; border-radius: 3px;">
-                            <p style="font-size: 11px; font-weight: 400; color: #4F555E;">Marble body</p>
-                        </div>
-                        <div
-                            style="padding: 3px 6px; background-color: #F2F4F7; width: fit-content; border-radius: 3px;">
-                            <p style="font-size: 11px; font-weight: 400; color: #4F555E;">Beige</p>
-                        </div>
-                        <div
-                            style="padding: 3px 6px; background-color: #F2F4F7; width: fit-content; border-radius: 3px;">
-                            <p style="font-size: 11px; font-weight: 400; color: #4F555E;">Cream</p>
-                        </div>
-
-                    </div>
-                </div>
-
-
-            </div>
-
-            <!-- attributes -->
-
-            <section style="display: grid; grid-template-columns: 40px 1fr; gap: 4px;">
-
-                <!-- Style -->
-                <div>
-                    <p style="font-size: 11px ;font-weight: 400; color: #676D77; line-height: 17.55px;">Style</p>
-                </div>
-                <div>
-                    <p style="font-size: 11px ;font-weight: 400; color: #4F555E; line-height: 17.55px;">
-                        Vintage, Modern, Traditional, Rustic, Bohemian
-                    </p>
-                </div>
-
-                <!-- Finish -->
-                <div>
-                    <p style="font-size: 11px ;font-weight: 400; color: #676D77; line-height: 17.55px;">
-                        Finish
-                    </p>
-                </div>
-                <div>
-                    <p style="font-size: 11px ;font-weight: 400; color: #4F555E; line-height: 17.55px;">
-                        Matte
-                    </p>
-                </div>
-
-                <!-- Color -->
-                <div>
-                    <p style="font-size: 11px ;font-weight: 400; color: #676D77; line-height: 17.55px;">
-                        Color
-                    </p>
-                </div>
-                <div>
-                    <p style="font-size: 11px ;font-weight: 400; color: #4F555E; line-height: 17.55px;">
-                        Beige
-                    </p>
-                </div>
-
-            </section>
-        </div>
-
-        <!--  7th product -->
-        <div style=" display: flex; flex-direction: column; gap: 8px; ">
-
-            <div style="display: flex; gap: 12px; flex-direction: row;">
-
-                <!-- image -->
-
-                <img height="100px" width="100px" src="Assets/first-image.png" alt="product image"
-                    style="border-radius: 8px;">
-
-                <!-- info section -->
-                <div style="display: flex; flex-direction: column; gap: 4px; ">
-
-                    <!-- sku id -->
-                    <p style="font-size: 10px ;font-weight: 400; color: #4F555E; line-height: 17.55px;">
-                        WC_DC57-10003
-                    </p>
-
-                    <!-- product name -->
-                    <h1 style="font-size: 12px; font-weight: 700; margin: 0;">
-                        Twinning Sable (Large, Beige) Marble Candle Holder
-                    </h1>
-
-                    <!-- price and MOQ section-->
-                    <div style="display: flex; align-items: center; gap: 10px;">
-                        <!-- price -->
-                        <h1 style="font-size: 10px; font-weight: 700;">
-                            $32
-                        </h1>
-
-                        <!-- MOQ -->
-                        <p style="font-size: 11px; font-weight: 400; color: #4F555E; line-height: 16.2px;">
-                            (MOQ-15)
-                        </p>
-                    </div>
-
-                    <!-- dynamic chips -->
-                    <div style="display: flex; gap: 4px; flex-wrap: wrap;">
-                        <div
-                            style="padding: 3px 6px; background-color: #F2F4F7; width: fit-content; border-radius: 3px;">
-                            <p style="font-size: 11px; font-weight: 400; color: #4F555E;">Marble body</p>
-                        </div>
-                        <div
-                            style="padding: 3px 6px; background-color: #F2F4F7; width: fit-content; border-radius: 3px;">
-                            <p style="font-size: 11px; font-weight: 400; color: #4F555E;">Beige</p>
-                        </div>
-                        <div
-                            style="padding: 3px 6px; background-color: #F2F4F7; width: fit-content; border-radius: 3px;">
-                            <p style="font-size: 11px; font-weight: 400; color: #4F555E;">Cream</p>
-                        </div>
-
-                    </div>
-                </div>
-
-
-            </div>
-
-            <!-- attributes -->
-
-            <section style="display: grid; grid-template-columns: 40px 1fr; gap: 4px;">
-
-                <!-- Style -->
-                <div>
-                    <p style="font-size: 11px ;font-weight: 400; color: #676D77; line-height: 17.55px;">Style</p>
-                </div>
-                <div>
-                    <p style="font-size: 11px ;font-weight: 400; color: #4F555E; line-height: 17.55px;">
-                        Vintage, Modern, Traditional, Rustic, Bohemian
-                    </p>
-                </div>
-
-                <!-- Finish -->
-                <div>
-                    <p style="font-size: 11px ;font-weight: 400; color: #676D77; line-height: 17.55px;">
-                        Finish
-                    </p>
-                </div>
-                <div>
-                    <p style="font-size: 11px ;font-weight: 400; color: #4F555E; line-height: 17.55px;">
-                        Matte
-                    </p>
-                </div>
-
-                <!-- Color -->
-                <div>
-                    <p style="font-size: 11px ;font-weight: 400; color: #676D77; line-height: 17.55px;">
-                        Color
-                    </p>
-                </div>
-                <div>
-                    <p style="font-size: 11px ;font-weight: 400; color: #4F555E; line-height: 17.55px;">
-                        Beige
-                    </p>
-                </div>
-
-            </section>
-        </div>
-
-        <!--  8th product -->
-        <div style=" display: flex; flex-direction: column; gap: 8px; ">
-
-            <div style="display: flex; gap: 12px; flex-direction: row;">
-
-                <!-- image -->
-
-                <img height="100px" width="100px" src="Assets/first-image.png" alt="product image"
-                    style="border-radius: 8px;">
-
-                <!-- info section -->
-                <div style="display: flex; flex-direction: column; gap: 4px; ">
-
-                    <!-- sku id -->
-                    <p style="font-size: 10px ;font-weight: 400; color: #4F555E; line-height: 17.55px;">
-                        WC_DC57-10003
-                    </p>
-
-                    <!-- product name -->
-                    <h1 style="font-size: 12px; font-weight: 700; margin: 0;">
-                        Twinning Sable (Large, Beige) Marble Candle Holder
-                    </h1>
-
-                    <!-- price and MOQ section-->
-                    <div style="display: flex; align-items: center; gap: 10px;">
-                        <!-- price -->
-                        <h1 style="font-size: 10px; font-weight: 700;">
-                            $32
-                        </h1>
-
-                        <!-- MOQ -->
-                        <p style="font-size: 11px; font-weight: 400; color: #4F555E; line-height: 16.2px;">
-                            (MOQ-15)
-                        </p>
-                    </div>
-
-                    <!-- dynamic chips -->
-                    <div style="display: flex; gap: 4px; flex-wrap: wrap;">
-                        <div
-                            style="padding: 3px 6px; background-color: #F2F4F7; width: fit-content; border-radius: 3px;">
-                            <p style="font-size: 11px; font-weight: 400; color: #4F555E;">Marble body</p>
-                        </div>
-                        <div
-                            style="padding: 3px 6px; background-color: #F2F4F7; width: fit-content; border-radius: 3px;">
-                            <p style="font-size: 11px; font-weight: 400; color: #4F555E;">Beige</p>
-                        </div>
-                        <div
-                            style="padding: 3px 6px; background-color: #F2F4F7; width: fit-content; border-radius: 3px;">
-                            <p style="font-size: 11px; font-weight: 400; color: #4F555E;">Cream</p>
-                        </div>
-
-                    </div>
-                </div>
-
-
-            </div>
-
-            <!-- attributes -->
-
-            <section style="display: grid; grid-template-columns: 40px 1fr; gap: 4px;">
-
-                <!-- Style -->
-                <div>
-                    <p style="font-size: 11px ;font-weight: 400; color: #676D77; line-height: 17.55px;">Style</p>
-                </div>
-                <div>
-                    <p style="font-size: 11px ;font-weight: 400; color: #4F555E; line-height: 17.55px;">
-                        Vintage, Modern, Traditional, Rustic, Bohemian
-                    </p>
-                </div>
-
-                <!-- Finish -->
-                <div>
-                    <p style="font-size: 11px ;font-weight: 400; color: #676D77; line-height: 17.55px;">
-                        Finish
-                    </p>
-                </div>
-                <div>
-                    <p style="font-size: 11px ;font-weight: 400; color: #4F555E; line-height: 17.55px;">
-                        Matte
-                    </p>
-                </div>
-
-                <!-- Color -->
-                <div>
-                    <p style="font-size: 11px ;font-weight: 400; color: #676D77; line-height: 17.55px;">
-                        Color
-                    </p>
-                </div>
-                <div>
-                    <p style="font-size: 11px ;font-weight: 400; color: #4F555E; line-height: 17.55px;">
-                        Beige
-                    </p>
-                </div>
-
-            </section>
-        </div>
-    </main>
+    </div>
 
     <footer
         style="display:flex; justify-content: space-between; background-color: #EEF1F7; width: 100%; padding: 5px 16px;">
@@ -851,9 +253,6 @@
         </p>
 
     </footer>
-
-
-
 </body>
 
 </html>
